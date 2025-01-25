@@ -29,6 +29,7 @@ CREATE TABLE api_logs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     action VARCHAR(50) NOT NULL,
     status VARCHAR(50) NOT NULL,
+    ip VARCHAR(45) NOT NULL,
     details TEXT DEFAULT NULL,
     timestamp DATETIME NOT NULL
 );
